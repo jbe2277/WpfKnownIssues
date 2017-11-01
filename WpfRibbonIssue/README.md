@@ -1,13 +1,28 @@
 # WPF Ribbon Window: Visual issues
 
-The WPF Ribbon implementation comes with various visual issues:
+This sample shows that the WPF Ribbon implementation comes with various visual issues:
  
 - The window content (client area) is cropped when the window is in Maximized mode.
 - The window border is too thin.
   - Windows 10: The border is thin at top and bottom but thick at left and right.
-- QuickAccessToolbar does not have enough ìmarginî to the top.
-- The window title is blurry and does not have enough ìmarginî to the top.
+- QuickAccessToolbar does not have enough ‚Äúmargin‚Äù to the top.
+- The window title is blurry and does not have enough ‚Äúmargin‚Äù to the top.
 - The application icon is not centered.
+
+**Screenshot on Windows 7:**
+![WPF Ribbon Window visual issue on Windows 7](https://github.com/jbe2277/WpfKnownIssues/raw/master/WpfRibbonIssue/ScreenshotWindows7.png "WPF Ribbon Window visual issue on Windows 7")
+
+## Workarounds
+
+**1. Inherit from Window class instead of RibbonWindow**
+
+The WPF Ribbon can be used without using the RibbonWindow class. The Window class does not have these visual issues. But this comes with some limitations:
+* The QuickAccessToolBar is not supported.
+* Contextual Ribbon Tabs cannot be used.
+
+**2. Use another 3rd party WPF Ribbon implementation**
+
+Another 3rd party WPF Ribbon implementation might not have these visual issues.
 
 ## Links
 
