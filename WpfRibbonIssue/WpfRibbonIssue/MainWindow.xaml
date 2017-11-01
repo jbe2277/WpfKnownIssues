@@ -1,0 +1,45 @@
+﻿<RibbonWindow x:Class="WpfRibbonIssue.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="450" Width="725">
+    <Ribbon>
+        <Ribbon.QuickAccessToolBar>
+            <RibbonQuickAccessToolBar>
+                <RibbonButton ToolTip="New" SmallImageSource="{StaticResource Image.Placeholder.Small}"/>
+                <RibbonButton ToolTip="Save" SmallImageSource="{StaticResource Image.Placeholder.Small}"/>
+                <RibbonButton ToolTip="Close" SmallImageSource="{StaticResource Image.Placeholder.Small}"/>
+            </RibbonQuickAccessToolBar>            
+        </Ribbon.QuickAccessToolBar>
+
+        <Ribbon.HelpPaneContent>
+            <RibbonButton SmallImageSource="{StaticResource Image.Placeholder.Small}"/>
+        </Ribbon.HelpPaneContent>
+        
+        <Ribbon.ContextualTabGroups>
+            <RibbonContextualTabGroup Header="Contextual" Background="Green" Visibility="Visible"/>
+        </Ribbon.ContextualTabGroups>
+        
+        <RibbonTab Header="Home">
+            <RibbonGroup Header="Clipboard">
+                <RibbonButton Label="Paste" LargeImageSource="{StaticResource Image.Placeholder.Large}"/>
+                <RibbonButton Label="Cut" SmallImageSource="{StaticResource Image.Placeholder.Small}"/>
+                <RibbonButton Label="Copy" SmallImageSource="{StaticResource Image.Placeholder.Small}"/>
+            </RibbonGroup>
+            <RibbonGroup Header="Image">
+                <RibbonButton Label="Select" LargeImageSource="{StaticResource Image.Placeholder.Large}"/>
+                <RibbonButton Label="Crop" SmallImageSource="{StaticResource Image.Placeholder.Small}"/>
+                <RibbonButton Label="Resize" SmallImageSource="{StaticResource Image.Placeholder.Small}"/>
+                <RibbonButton Label="Rotate" SmallImageSource="{StaticResource Image.Placeholder.Small}"/>
+            </RibbonGroup>
+        </RibbonTab>
+        
+        <RibbonTab Header="View">
+            
+        </RibbonTab>
+
+        <RibbonTab Header="Design" ContextualTabGroupHeader="Contextual">
+            
+        </RibbonTab>
+        
+    </Ribbon>
+</RibbonWindow>
