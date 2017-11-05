@@ -13,6 +13,8 @@ ButtonResources requires BrushResources. The WPF Designer of Visual Studio works
 
 **1. Register all ResourceDictionaries at Application level**
 
+> Note: The sample application [Waf Information Manager](https://github.com/jbe2277/waf/tree/master/src/System.Waf/Samples/InformationManager) shows the techniques described here.
+
 If the ResourceDictionaries are merged directly into the Application ResourceDictionary then WPF is able to resolve the dependencies right.
 
 - [App.xaml](https://github.com/jbe2277/WpfKnownIssues/blob/master/WpfMergedDictionariesIssue/WpfMergedDictionariesIssue/App.xaml)
