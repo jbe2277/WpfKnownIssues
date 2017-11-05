@@ -16,6 +16,8 @@ This sample shows that the WPF Ribbon implementation comes with various visual i
 
 **1. Inherit from Window class instead of RibbonWindow**
 
+> Note: The sample application [Waf Writer](https://github.com/jbe2277/waf/tree/master/src/System.Waf/Samples/Writer) shows the techniques described here.
+
 The WPF Ribbon can be used without using the RibbonWindow class. The Window class does not have these visual issues. But this comes with some limitations:
 * The QuickAccessToolBar is not supported.
 * Contextual Ribbon Tabs cannot be used.
