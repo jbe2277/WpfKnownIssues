@@ -26,3 +26,4 @@ This would work as well. But consider the performance impact of using DynamicRes
 ## Links
 
 - [Reported at Microsoft Connect](https://connect.microsoft.com/VisualStudio/feedback/details/781727/wpf-resourcedictionary-mergeddictionaries-resolve-issue)
+- [WPF XAML resources for modular applications](https://github.com/jbe2277/waf/wiki/WPF-XAML-resources-for-modular-applications)
